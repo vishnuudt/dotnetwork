@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Trees", "Trees\Trees.csproj", "{E9713978-C206-4BE1-AC4C-0065A4171124}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Graphs", "Graphs\Graphs.csproj", "{71484B1D-9479-4DA8-B56A-C0A124AFAD21}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Strings", "StringMatch\Strings.csproj", "{C2F7B703-D075-4913-AA1F-DFBCC5223456}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms", "Algorithms\Algorithms.csproj", "{98BA86AF-875E-48DA-A3F8-3F7E6E373F22}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E9713978-C206-4BE1-AC4C-0065A4171124}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E9713978-C206-4BE1-AC4C-0065A4171124}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E9713978-C206-4BE1-AC4C-0065A4171124}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E9713978-C206-4BE1-AC4C-0065A4171124}.Release|Any CPU.Build.0 = Release|Any CPU
+		{71484B1D-9479-4DA8-B56A-C0A124AFAD21}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{71484B1D-9479-4DA8-B56A-C0A124AFAD21}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{71484B1D-9479-4DA8-B56A-C0A124AFAD21}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{71484B1D-9479-4DA8-B56A-C0A124AFAD21}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C2F7B703-D075-4913-AA1F-DFBCC5223456}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C2F7B703-D075-4913-AA1F-DFBCC5223456}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C2F7B703-D075-4913-AA1F-DFBCC5223456}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C2F7B703-D075-4913-AA1F-DFBCC5223456}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98BA86AF-875E-48DA-A3F8-3F7E6E373F22}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98BA86AF-875E-48DA-A3F8-3F7E6E373F22}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98BA86AF-875E-48DA-A3F8-3F7E6E373F22}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98BA86AF-875E-48DA-A3F8-3F7E6E373F22}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
