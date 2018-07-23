@@ -11,7 +11,7 @@ namespace Graphs
     {
         private DirectedWeightedEdge<V>[] _edgeTo = new DirectedWeightedEdge<V>[Int32.MaxValue];
         private double[] _distanceTo = new double[Int32.MaxValue];
-        private IndexedPriorityQueueHeap<V> _indexedPQ = new IndexedPriorityQueueHeap<V>();
+        private IndexedPriorityQueueHeap<Double> _indexedPQ = new IndexedPriorityQueueHeap<Double>();
 
         public DijkstraShortestPath(DirectedWeightedGraph<V> graph,  V startVertex): base(graph, startVertex)
         {
@@ -21,10 +21,10 @@ namespace Graphs
             }
             _distanceTo[startVertex.GetHashCode()] = 0.0;
 
-            _indexedPQ.Insert(startVertex.GetHashCode(), startVertex);
+            _indexedPQ.Insert(startVertex.GetHashCode(), 0.0);
             while (!_indexedPQ.IsEmpty)
             {
-                var result = _indexedPQ.Extract();
+                var result = _indexedPQ.Extract(); // Min
                 foreach (var edge in graph.Adjacency(result))
                 {
                     Relax(edge);
@@ -44,11 +44,11 @@ namespace Graphs
                 // so that it can used in the PQ (it is the priority of the vertex that is used for swim or sink)
                 if (_indexedPQ.Contains(end.GetHashCode()))
                 {
-                    _indexedPQ.DecreaseKey(end.GetHashCode(), end);
+                    _indexedPQ.DecreaseKey(end.GetHashCode(), _distanceTo[end.GetHashCode()]);
                 }
                 else
                 {
-                    _indexedPQ.Insert(end.GetHashCode(), end);
+                    _indexedPQ.Insert(end.GetHashCode(), _distanceTo[end.GetHashCode()]);
                 }
             }
         }

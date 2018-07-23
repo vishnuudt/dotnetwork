@@ -4,14 +4,13 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Algorithms
+namespace Permutation
 {
     class Program
     {
         static void Main(string[] args)
         {
-            BitToggle bt = new BitToggle();
-            bt.ToggleBits(50);
+            var perm = new EfficientPermute(4);
             Console.Read();
         }
     }
